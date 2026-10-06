@@ -1,11 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CV en ligne de Severine AGRAIN, développeur web junior.">
+        <title>CV de Severine AGRAIN| Développeur Web</title>
+        <link rel="icon" type="image/png" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <Link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <main class="cv">
+        <!-- En-tête du CV -->
+        <header class="cv-header">
+            <h1 class="cv-title">Severine AGRAIN</h1>
+            <h2 class="cv-subtitle">Développeur Web et web Mobile</h2>
+            <img src="images/photo-profil.jpg" alt="Photo de profil de Severine AGRAIN">
+            <address class="contact-list">
+                <a class="contact-link" href="mailto:severine.agrain@example.com">
+                    <span class="contact-icon" aria-hidden="true">✉</span>
+                </a>
+                    <span class="contact-information">severine.agrain@example.com</span>
+                <a class="contact-link" href="tel:0630771670">
+                    <span class="contact-icon" aria-hidden="true">☎</span>
+                </a>
+                    <span class="contact-information">+33 6 30 77 16 70</span>
+                <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=81%20chemin%20de%20figuerolles,%2013180%20Gignac-la-Nerthe" target="_blank">
+                    <span class="contact-icon" aria-hidden="true">🏠</span>
+                </a>
+                <span class="contact-information">
+                    81 chemin de figuerolles, 13180 Gignac-la-Nerthe
+                </span>
+                <span class="contact-icon" aria-hidden="true">🚗</span>
+                <span>Permis B</span>
+            </address>
+        </header>
+        <!-- Contenu principal -->
+        <div class="cv-body">
+        <!-- Colonne latérale -->
+            <aside class="sidebar">
+            <section class="sidebar-section">
+                <h2>Compétences</h2>
+                    <ul class="compétences-list">
+                        <li class="skill">
+                            <span>HTML</span>
+                            <span class="skill-level" aria-label="Niveau quatre sur cinq" >★★★★☆</span>
+                        </li>
+                        <li class="skill">
+                            <span>CSS</span>
+                            <span class="skill-level" aria-label="Niveau quatre sur cinq">★★★★☆</span>
+                        </li>
+                        <li class="skill">
+                            <span>JavaScript</span>
+                            <span class="skill-level" aria-label="Niveau trois sur cinq">★★★☆☆</span>
+                        </li>
+                        <li class="skill">
+                            <span>Git et GitHub</span>
+                            <span class="skill-level" aria-label="Niveau trois sur cinq">★★★☆☆</span>
+                        </li>
+                        <li class="skill">
+                            <span>Responsive Design</span>
+                            <span class="skill-level" aria-label="Niveau trois sur cinq">★★★☆☆</span>
+                        </li>
+                    </ul>
+            </section>
+            <section class="sidebar-section">
+                <h2>Langues</h2>
+                    <ul class="language-list">
+                        <li>
+                            <span>Français</span>
+                            <span>Français natif</span>
+                        </li>
+                        <li>
+                            <span>Anglais</span>
+                            <span>Intermédiaire</span>
+                        </li>
+                    </ul>
+            </section>
+            <section class="sidebar-section">
+                <h2>Qualités</h2>
+                    <ul class="quality-list">
+                        <li>Autonomie</li>
+                        <li>Curiosité</li>
+                        <li>Rigueur</li>
+                        <li>Esprit d’équipe</li>
+                    </ul>
+            </section>
+            <section class="sidebar-section">
+                <h2>Centres d’intérêt</h2>
+                    <ul class="interest-list">
+                        <li>Plongée sous-marine</li>
+                        <li>Technologies responsables</li>
+                        <li>Randonnée</li>
+                        <li>Photographie</li>
+                    </ul>
+                </section>
+            </aside>
+        
+        <!-- Colonne principale -->
+        <div class="main-content">
+        <section class="content-section">
+        <h2>Profil</h2>
+            <p class="profile-description">
+            En cours de formation en développement web, je souhaite
+            rejoindre une équipe dynamique afin de participer à la
+            conception de solutions numériques accessibles,
+            performantes et responsables. Curieuse et rigoureuse,
+            j’apprécie le travail en équipe et la découverte de
+            nouvelles technologies.
+            </p>
+        </section>
+        <section class="content-section">
+        <h2>Formations</h2>
+            <article class="timeline-item">
+                <div class="timeline-content">
+                <h3>Formation Développeur Web</h3>
+                <p class="organization">Centre Europeen de Formation
+                    <p>
+                    Formation consacrée à HTML, CSS, JavaScript,
+                    Git, GitHub, l’accessibilité et la conception
+                    d’interfaces web.
+                    </p>
+                </div>
+                <div class="timeline-date">
+                <time datetime="2025-09">Septembre 2025</time>
+                <span>à</span>
+                <time datetime="2027-06">Juin 2027</time>
+                </div>
+            </article> <article class="timeline-item">
+                <div class="timeline-content">
+                <h3>BTS Electrotechnique</h3>
+                <p class="organization">CNED</p>
+                </div>
+                <div class="timeline-date">
+                <time datetime="2001-2002"> 2001-2002</time>
+                <span>Lyon</span>
+                </div>
+            </article> <article class="timeline-item">
+                <div class="timeline-content">
+                <h3>DUT chimie</h3>
+                <p class="organization">IUT de Lyon</p>
+                </div>
+                <div class="timeline-date">
+                <time datetime="1996-1998"> 1996-1998</time>
+                <span>Lyon</span>
+                </div>
+            </article>
+            
+            <article class="timeline-item">
+                <div class="timeline-content">
+                <h3>Baccalauréat technologique spécialité Sciences et Technologies de l'Ingénieur (STI2D)</h3>
+                <p class="organization">Lycée la Martinière Terreaux, Lyon</p>
+                <p>
+                Spécialités Chimie et Sciences de l’Ingénieur.</p>
+                </div>
+                <div class="timeline-date">
+                <time datetime="1992">1992</time>
+                <span>Lyon</span>
+                </div>
+            </article>
+        </section>
+        <section class="content-section">
+        <h2>Stages</h2>
+            <article class="timeline-item">
+                <div class="timeline-content">
+                <h3>Surveillance de la distribution en electricité</h3> 
+                <p class="organization">RTE</p>
+                    <ul class="mission-list">
+                        <li>Mise en place d’un système de surveillance de la distribution électrique.</li>
+                        <li>Analyse des données de consommation et de production.</li>  
+                        <li>suivi des incidents et des pannes.</li>
+                    </ul>
+                </div>
+                <div class="timeline-date">
+                <time datetime="2002-07">Juillet 2002</time>
+                <span>Amberieu en Bugey</span>
+                </div>
+            </article>
+        </section>
+        <section class="content-section">
+        <h2>Expériences professionnelles</h2>
+            <article class="timeline-item">
+            <div class="timeline-content">
+            <h3>Technicienne de maintenance</h3>
+            <p class="organization">BUREAU VERITAS</p>  
+                <ul class="mission-list">
+                     <li>Gestion des stocks et approvisionnement.</li>
+                     <li>Réparation et maintenance des équipements.</li>
+                </ul>
+            </div>
+            <div class="timeline-date">
+            <time datetime="2020-06">Juin 2020</time>
+            <span>à auhjourd'hui</span>
+       
+            </div>
+            </article>
+            <article class="timeline-item">
+            <div class="timeline-content">
+            <h3>Préparatrice de commandes</h3>
+            <p class="organization">Vente-privé.com</p>
+                <ul class="mission-list">
+                    <li>Préparation des commandes clients.</li>
+                    <li>Paletisation et emballage des produits.</li>
+                 </ul>
+            </div>
+            <div class="timeline-date">
+            <time datetime="2018-10">Octobre 2018</time>
+            <span>à</span>
+            <time datetime="2020-05">Mai 2020</time>
+            </div>
+            </article>
+            <article class="timeline-item">
+            <div class="timeline-content">
+            <h3>Technicienne</h3>
+            <p class="organization">BUREAU VERITAS</p>  
+                <ul class="mission-list">
+                    <li>Gestion des stocks et approvisionnement.</li>
+                    <li>Gestion du parc matériel d'analyse.</li>
+                    <li>Réparation et maintenance des équipements.</li>
+                    <li>Suivi métrologique et étalonnage des instruments.</li>
+                </ul>
+            </div>
+            <div class="timeline-date">
+            <time datetime="2004-04">Avril 2004</time>
+            <span>à</span>
+            <time datetime="2013-07">Juillet 2013</time>
+            </div>
+            </article>
+            <article class="timeline-item">
+            <div class="timeline-content">
+            <h3>Technicien de laboratoire</h3>
+            <p class="organization">Tredi site de Saint-Vulbas</p>
+                <ul class="mission-list">
+                    <li>Surveillance et analyse des rejets industriels.</li>
+                    <li>Élaboration de rapports d’analyse.</li>
+                    <li>Développement de solutions d’amélioration en environnement.</li>
+                    <li>Établissement de procédures de contrôle qualité.</li>
+                </ul>
+            </div>
+            <div class="timeline-date">
+            <time datetime="1992-08">Août 1992</time>
+            <span>à</span>
+            <time datetime="2004-04">Avril 2004</time>
+            </div>
+            </article>
+           
+        </section>
+        </div>
+        </div>
+
+        <!-- Pied de page -->
+        <footer class="cv-footer">
+            <nav class="social-links" aria-label="Réseaux professionnels">
+            https://www.linkedin.com/
+            images/linkedin.svg
+            </a>
+            https://github.com/
+            images/github.svg
+            </a>
+            https://twitter.com/
+            images/twitter.svg
+            </a>
+            </nav>
+            <p class="update-date">
+            Dernière mise à jour :
+            <time datetime="2026-10-05">5 octobre 2026</time>
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
