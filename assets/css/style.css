@@ -1,0 +1,288 @@
+:root {
+  /* Couleurs de la palette */
+  --couleur-titre: #17abb3;
+  --couleur-secondaire: #333333;
+  --couleur-accent: #e3e3e3;
+  --couleur-fond: #f5f5f5;
+  --couleur-texte: #ffffff;
+}
+
+/*polices uitilisées*/
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf) format('truetype'),
+    url(../fonts/Lato-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+/*definition de la taille du corps de la page*/ 
+body {
+    /* Définit la largeur maximale du document */
+    max-width: 1160px;
+    
+    /* Force l'élément à prendre toute la place disponible jusqu'à 1160px */
+    width: 100%;
+    
+    /* Centre automatiquement l'élément horizontalement (0 en haut/bas, auto à gauche/droite) */
+    margin: auto;
+}
+
+/* definit les icones */
+svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill:var(--couleur-fond);   
+}
+
+/* Styles pour  CV */
+header h2{
+     /* Définit la couleur du texte pour les titres de niveau 2 et de la police de caractères */
+    font-family: "Lato";
+    color: var(--couleur-texte);  
+}
+
+h3,ul,li,p { 
+     /* Définit la couleur du texte pour les titres de niveau 3 ul Li ps */
+    font-family: "Raleway", sansserif;
+    color: var(--couleur-secondaire);
+    margin-bottom:0;
+}
+
+h2{
+     /* Définit la couleur du texte pour les titres de niveau 2 et de la police de caractères */
+    font-family: "lato",sans-serif;
+    color: var(--couleur-titre);
+}
+
+.ColonneD time { 
+     /* Définit la couleur du texte pour les titres de niveau 3 et en dessous*/
+    font-family: "Raleway", sansserif;
+    color: var(--couleur-titre);
+}
+
+
+.ColonneD time + span { 
+     /* Définit la couleur du texte pour les titres de niveau 3 et en dessous*/
+    font-family: "Raleway",sans-serif;
+    color: var(--couleur-titre);
+}
+
+
+/*mise en forme de l'entête*/
+header {
+    /* definition de la couleur et de l'emplacement du texte et image dans l'entête*/
+    background-color: var(--couleur-titre);
+    color: var(--couleur-texte);
+    font-family: "Lato", sansserif; 
+
+    display: grid;
+    grid-template-columns:350px 1fr ;
+    grid-template-rows: auto auto auto;
+    padding-bottom: 15px;
+
+    max-width: 1160px;
+    width: 100%;
+
+    align-items: center;
+    column-gap: 30px;
+   
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.photo {
+    display: grid;
+    grid-column:1;
+    grid-row: 2 / 3;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--couleur-texte);   
+    cursor:zoom-in;
+}
+
+/* Nom */
+.cv-title {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0;
+}
+
+/* Métier */
+.cv-subtitle {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin: 20px 0 0 0;
+}
+
+/* Bloc coordonnées */
+.contact-list {
+grid-column: 2;
+grid-row:3;
+margin: 20px 0 0 0;
+display: grid;
+grid-template-columns: repeat(4, auto);
+gap: 8px 30px;
+width: fit-content;
+font-size: x-small;
+color:  var(--couleur-texte);
+
+}
+
+/*mise en forme du corps du CV*/
+
+main {
+    display: flex;
+}
+
+.cv-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    font-size: x-small;
+    line-height: 1.1;
+    max-width: 1160px;
+    width: 100%;
+    text-indent: 20px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ul{
+    padding-inline-start: 0;
+    margin-bottom:0;
+}
+/* style des listes */
+.Competences li,
+.Langues li,
+.mission-list li {
+    list-style-type: none;
+}
+
+/*mise en forme de la colonne lattérale Gauche*/
+.ColonneG{
+    flex:0.7;
+    background-color: var(--couleur-fond);
+} 
+
+/* style des listes */
+
+.Competences li,
+.Langues li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.etoiles{
+    color:var(--couleur-titre);
+    font-size:small;
+}
+
+.quality-list li,
+.interest-list li {
+    list-style-type:square;
+    list-style-position:inside;
+    text-align: left;
+}
+
+.quality-list li::marker,
+.interest-list li::marker {
+    color:var(--couleur-titre);
+}
+
+.Competences li {
+    font-weight: bold;
+}
+
+.Langues li span:first-child{
+    font-weight: bold;
+}
+
+/*mise en forme de la colonne lattérale droite*/
+
+/*largeur de la colonne de droite*/
+.ColonneD{
+    flex:2;
+}
+
+.Profil p{
+    text-align: justify;
+    text-indent:30px;
+
+}
+
+.Effet1{
+    display: grid;
+    grid-template-columns:1fr auto;
+    align-items: center;
+    justify-content: stretch;
+    grid-auto-flow: column dense;
+    justify-items: start;
+}
+
+.Effet2{
+    display: grid;
+    grid-template-columns:1fr  auto;
+    align-items: center;
+    justify-content: stretch;
+    grid-auto-flow: column dense;
+    justify-items: start;
+}
+
+
+article:hover{
+   
+    background-color: #e3e3e3;
+    background-origin: padding-box;
+
+    border-left:5px solid #17abb3;
+   
+
+}
+
+/* mise en forme du pied de page*/
+footer{
+    background-color: var(--couleur-titre);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+
+nav svg {
+    
+    width: 30px;
+    height: 30px;
+    fill:var(--couleur-fond); 
+}
+
+nav svg:hover {
+     fill-opacity: 50%;
+
+}
+
+.update-date {
+    font-size: xx-small;
+    color: var(--couleur-texte);
+    text-align: center;
+    font-family: "Lato", sansserif;
+    
+}
