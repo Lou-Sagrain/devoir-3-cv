@@ -275,7 +275,7 @@ nav svg {
 }
 
 nav svg:hover {
-     fill-opacity: 50%;
+     fill-opacity: 0.5;
 
 }
 
